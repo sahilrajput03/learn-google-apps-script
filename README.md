@@ -13,9 +13,13 @@
 
 ## Docs
 
-```bash
-# We can make use "Test Deployment" and adding appropriate query in the end
-# for e.g., "username=sahil" and then trying to open below url in
-# browser url bar directly and it would show the params in the browser itself
+We can make use "Test Deployment" and adding appropriate query in the end.
+
+For e.g., "username=sahil" and then trying to open below url in
+
+Browser url bar directly and it would show the params in the browser itself
+
+```
 https://script.google.com/macros/s/AKfycbwv0Vvlmg6Vhd37gFROw9efDDFQixCShKh0Wt4XE48/dev?username=sahil
 ````
+
