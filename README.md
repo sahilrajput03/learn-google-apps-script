@@ -11,7 +11,9 @@
 <image width="800" src="https://github.com/sahilrajput03/learn-google-apps-script/assets/31458531/ad661c4e-f06a-4201-ae6c-d0b0b2161790" />
 
 
-## Docs
+## Making use of Test Deployment
+
+Source: [Docs](https://developers.google.com/apps-script/guides/web)
 
 We can make use "Test Deployment" and adding appropriate query in the end.
 
@@ -22,4 +24,9 @@ Browser url bar directly and it would show the params in the browser itself
 ```
 https://script.google.com/macros/s/AKfycbwv0Vvlmg6Vhd37gFROw9efDDFQixCShKh0Wt4XE48/dev?username=sahil
 ````
+
+OUTPUT:
+
+![image](https://github.com/sahilrajput03/learn-google-apps-script/assets/31458531/91896983-601c-4f5d-8e34-83d2db2ab177)
+
 
