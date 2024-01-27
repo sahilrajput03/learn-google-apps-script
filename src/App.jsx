@@ -20,11 +20,10 @@ const saveToShet = async () => {
     pms: "12",
     phoneNumberfinal: "+9182232323"
   })
-  const res = await axios.post(deploymentUrl, formData.toString(), {
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
-  })
+  const config = {
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  }
+  const res = await axios.post(deploymentUrl, formData.toString(), config)
   console.log('responseData?', res.data)
 }
 
