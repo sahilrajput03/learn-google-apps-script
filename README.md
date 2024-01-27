@@ -40,6 +40,18 @@ OUTPUT:
 
 Refer here: [Click here](https://stackoverflow.com/a/43143736/10012446)
 
+```js
+function doGet(e) {
+  var params = JSON.stringify(e);
+  MailApp.sendEmail({
+    to: "sahilrajput03@gmail.com",
+    subject: "Call Sucessful",
+    htmlBody: "I am your <br>" +
+              "DATA"
+  });
+  return ContentService.createTextOutput(params).setMimeType(ContentService.MimeType.JSON);
+}
+```
 Note: When you try to send email via your script you might encouter this error, so you might need to handle this (TODO_SAHIL).
 
 <image width="800" src="https://github.com/sahilrajput03/learn-google-apps-script/assets/31458531/cbd18b5c-ab43-4604-9015-891a2154a9dd" />
