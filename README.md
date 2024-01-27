@@ -3,6 +3,7 @@
 Official Docs: [Click here](https://developers.google.com/apps-script/guides/web)
 
 - You can create google apps script project here - https://script.google.com/home/start
+- You can only have two function i.e, `doGet` and `doPost` function for GET and POST requests to be handled on the web url respectively.
 - Note: If you are getting CORS error when you call the deployment url of the file, then it means you have not defined the function name `doPost` in your file which is the actual function that is called when any the web api call is made.
 - You **do** need to deploy each versioned deployment to be able to test it.
 - 
