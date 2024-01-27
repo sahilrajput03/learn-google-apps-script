@@ -30,10 +30,13 @@ https://script.google.com/macros/s/AKfycbwv0Vvlmg6Vhd37gFROw9efDDFQixCShKh0Wt4XE
 
 OUTPUT:
 
-![image](https://github.com/sahilrajput03/learn-google-apps-script/assets/31458531/91896983-601c-4f5d-8e34-83d2db2ab177)
+<image width="800" src="https://github.com/sahilrajput03/learn-google-apps-script/assets/31458531/91896983-601c-4f5d-8e34-83d2db2ab177" />
 
 
 ## You can probably send email via google app script
 
 Refer here: [Click here](https://stackoverflow.com/a/43143736/10012446)
 
+Note: When you try to send email via your script you might encouter this error, so you might need to handle this (TODO_SAHIL).
+
+<image width="800" src="https://github.com/sahilrajput03/learn-google-apps-script/assets/31458531/cbd18b5c-ab43-4604-9015-891a2154a9dd" />
