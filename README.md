@@ -1,8 +1,12 @@
 # Learn Google Apps Script
 
-Official Docs: [Click here](https://developers.google.com/apps-script/guides/web)
+- **Docs:** [Click here](https://developers.google.com/apps-script/guides/web)
+  - **(TODO) Features & Limitations of Google Apps Script | Docs:** [Click here](https://developers.google.com/apps-script/guides/import-export#features_and_limitations)
+  - **(TODO) Libraries | Docs:** [Click here](https://developers.google.com/apps-script/guides/import-export#features_and_limitations)
 
-Interesting StackOverflow Question: [Click here](https://stackoverflow.com/questions/43127023/how-do-i-create-a-doposte-function-in-apps-script-project-to-capture-http-post)
+Interesting StackOverflow Questions:
+- [1](https://stackoverflow.com/questions/43127023/how-do-i-create-a-doposte-function-in-apps-script-project-to-capture-http-post)
+- [2](https://stackoverflow.com/questions/11725675/organizing-spreadsheet-code-in-several-gs-files-even-possible)
 
 **Important Points to Remember:**
 - You can create google apps script project here - https://script.google.com/home/start
@@ -55,3 +59,48 @@ function doGet(e) {
 Note: When you try to send email via your script you might encouter this error, so you might need to handle this (TODO_SAHIL).
 
 <image width="800" src="https://github.com/sahilrajput03/learn-google-apps-script/assets/31458531/cbd18b5c-ab43-4604-9015-891a2154a9dd" />
+
+## Make use of multiple files
+
+Article: [Click here](https://nilsrooijmans.com/google-ads-scripts-faq/whats-the-use-of-multiple-gs-files-in-google-ads-scripts/)
+
+```js
+// file1.gs
+function doGet() {
+  return ContentService.createTextOutput('Hello, function1.');
+}
+```
+
+```js
+// file2.gs
+function doGet() {
+  return ContentService.createTextOutput('Hello, function2.');
+}
+function doGet() {
+  return ContentService.createTextOutput('Hello, function3.');
+}
+```
+
+Now, when you hit the test deployment (or versioned deployment) url, you would see `Hello, function3.`. This means that the bottom most file and the bottom most function inside that file overwrites any other `doGet` function in that file and other `doGet` functions in any other files.
+
+Also, you can change the order of the files in google apps script project by clicking the tripple dot menu option and then choosing the `Move file up` or `Move file down` option respectively.
+
+## Code Splitting using function and files
+
+```js
+// File: file2.gs (my bottom most file in the google apps script project)
+
+// NOTE: `myFun` can be declared:
+// 1. above or below the `doGet` function
+// 2. in any different .gs file irrespective of that file being above or below in the sequence order of the project files
+function myFun() {
+  return "myFun is cool!"
+}
+
+function doGet() {
+  const message = myFun()
+  return ContentService.createTextOutput(message);
+}
+```
+
+Now, when you hit the test deployment (or versioned deployment) url, you would see `myFun is cool!`.
