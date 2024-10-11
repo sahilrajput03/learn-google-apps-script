@@ -8,6 +8,8 @@ Interesting StackOverflow Questions:
 - [1](https://stackoverflow.com/questions/43127023/how-do-i-create-a-doposte-function-in-apps-script-project-to-capture-http-post)
 - [2](https://stackoverflow.com/questions/11725675/organizing-spreadsheet-code-in-several-gs-files-even-possible)
 
+## ❤️ ❤️ ❤️ For more recent test codes using Apps Script you can search for `#Apps Script` in my [Office Utility Tools Notes](https://docs.google.com/document/d/1CvC-N3daE9P8k2d-joGwLtRez9Vm4La0o23w1xCLJOw/edit?tab=t.0#heading=h.6l193vt5cll6) google doc.
+
 **Important Points to Remember:**
 - You can create google apps script project here - https://script.google.com/home/start
 - You can only have two function i.e, `doGet` and `doPost` function for GET and POST requests to be handled on the web url respectively.
